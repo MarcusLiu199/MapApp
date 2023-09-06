@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		A2AB39062AA7D15000F99DBC /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB39052AA7D15000F99DBC /* MapAppApp.swift */; };
 		A2AB39082AA7D15000F99DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB39072AA7D15000F99DBC /* ContentView.swift */; };
-		A2AB390A2AA7D15400F99DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB39092AA7D15400F99DBC /* Assets.xcassets */; };
 		A2AB390D2AA7D15400F99DBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB390C2AA7D15400F99DBC /* Preview Assets.xcassets */; };
+		A2AB39142AA803C900F99DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AB39132AA803C900F99DBC /* Assets.xcassets */; };
+		A2AB39202AA8070B00F99DBC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB391F2AA8070B00F99DBC /* Location.swift */; };
+		A2AB39222AA807C000F99DBC /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB39212AA807C000F99DBC /* LocationsDataService.swift */; };
+		A2AB39242AA808FB00F99DBC /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB39232AA808FB00F99DBC /* LocationsView.swift */; };
+		A2AB39262AA80C8800F99DBC /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB39252AA80C8800F99DBC /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2AB39022AA7D15000F99DBC /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AB39052AA7D15000F99DBC /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		A2AB39072AA7D15000F99DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A2AB39092AA7D15400F99DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2AB390C2AA7D15400F99DBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2AB39132AA803C900F99DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MapApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A2AB391F2AA8070B00F99DBC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A2AB39212AA807C000F99DBC /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		A2AB39232AA808FB00F99DBC /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		A2AB39252AA80C8800F99DBC /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		A2AB39042AA7D15000F99DBC /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				A2AB39132AA803C900F99DBC /* Assets.xcassets */,
 				A2AB39052AA7D15000F99DBC /* MapAppApp.swift */,
 				A2AB39072AA7D15000F99DBC /* ContentView.swift */,
-				A2AB39092AA7D15400F99DBC /* Assets.xcassets */,
+				A2AB391A2AA8061300F99DBC /* DataServices */,
+				A2AB39172AA8051A00F99DBC /* ViewModels */,
+				A2AB39162AA8050500F99DBC /* Views */,
+				A2AB39152AA804FA00F99DBC /* Models */,
 				A2AB390B2AA7D15400F99DBC /* Preview Content */,
 			);
 			path = MapApp;
@@ -65,6 +77,38 @@
 				A2AB390C2AA7D15400F99DBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2AB39152AA804FA00F99DBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB391F2AA8070B00F99DBC /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A2AB39162AA8050500F99DBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB39232AA808FB00F99DBC /* LocationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2AB39172AA8051A00F99DBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB39252AA80C8800F99DBC /* LocationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2AB391A2AA8061300F99DBC /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				A2AB39212AA807C000F99DBC /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB39142AA803C900F99DBC /* Assets.xcassets in Resources */,
 				A2AB390D2AA7D15400F99DBC /* Preview Assets.xcassets in Resources */,
-				A2AB390A2AA7D15400F99DBC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AB39222AA807C000F99DBC /* LocationsDataService.swift in Sources */,
+				A2AB39262AA80C8800F99DBC /* LocationViewModel.swift in Sources */,
 				A2AB39082AA7D15000F99DBC /* ContentView.swift in Sources */,
+				A2AB39242AA808FB00F99DBC /* LocationsView.swift in Sources */,
+				A2AB39202AA8070B00F99DBC /* Location.swift in Sources */,
 				A2AB39062AA7D15000F99DBC /* MapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
